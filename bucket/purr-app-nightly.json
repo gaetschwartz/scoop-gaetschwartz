@@ -1,0 +1,35 @@
+{
+    "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+    "version": "2026.11.12",
+    "description": "Transcribe audio files and URLs with Whisper (desktop app and command-line tool, nightly build)",
+    "homepage": "https://github.com/gaetschwartz/purr",
+    "license": "MIT",
+    "notes": "The Windows build bundles the CUDA runtime, so the download is about 500 MB. It uses an NVIDIA GPU when present, then Vulkan, then the CPU.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/gaetschwartz/purr/releases/download/nightly-2026.11.12/purr-desktop-windows-x64-cuda-vulkan-portable.zip",
+            "hash": "81f791cb32e33ed56b9026176040daeb4499927e7fbecfcbf13c0368ffb8b96f"
+        }
+    },
+    "depends": "gaetschwartz/purr-nightly",
+    "shortcuts": [
+        [
+            "purr-app.exe",
+            "Purr Nightly"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/gaetschwartz/purr/releases",
+        "regex": "releases/tag/nightly-(\\d{4}\\.\\d{2}\\.\\d{2})"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/gaetschwartz/purr/releases/download/nightly-$version/purr-desktop-windows-x64-cuda-vulkan-portable.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS.txt"
+        }
+    }
+}
