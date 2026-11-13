@@ -11,12 +11,7 @@
             "hash": "1f7d32e26f02a044d12db47987c567c110d36142050e54d90fb0365972032f5b"
         }
     },
-    "bin": [
-        [
-            "purr.exe",
-            "purr-nightly"
-        ]
-    ],
+    "bin": "purr.exe",
     "checkver": {
         "url": "https://github.com/gaetschwartz/purr/releases",
         "regex": "releases/tag/nightly-(\\d{4}\\.\\d{2}\\.\\d{2})"

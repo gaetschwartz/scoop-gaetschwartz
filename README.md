@@ -13,8 +13,10 @@ The bucket must be added under the name `gaetschwartz`: the app manifests depend
 | --- | --- | --- |
 | `scoop install purr` | `purr` command-line tool | latest release |
 | `scoop install purr-app` | Purr desktop app (portable build), plus the command-line tool | latest release |
-| `scoop install purr-nightly` | command-line tool, exposed as `purr-nightly` | latest nightly |
-| `scoop install purr-app-nightly` | Purr desktop app (portable build), plus `purr-nightly` | latest nightly |
+| `scoop install purr-nightly` | `purr` command-line tool | latest nightly |
+| `scoop install purr-app-nightly` | Purr desktop app (portable build), plus the command-line tool | latest nightly |
+
+The stable and nightly packages both provide the `purr` command, so install one channel at a time.
 
 Windows x64 only. The builds bundle the CUDA runtime, so each download is about 500 MB. Nightlies move
 forward with `scoop update`.
