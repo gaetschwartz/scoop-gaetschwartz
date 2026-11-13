@@ -12,11 +12,11 @@ The bucket must be added under the name `gaetschwartz`: the app manifests depend
 | Install | What you get | Channel |
 | --- | --- | --- |
 | `scoop install purr` | `purr` command-line tool | latest release |
-| `scoop install purr-app` | Purr desktop app (portable build), plus the command-line tool | latest release |
+| `scoop install purr-app` | Purr desktop app (portable build), without the `purr` command | latest release |
 | `scoop install purr-canary` | `purr` command-line tool | latest canary |
-| `scoop install purr-app-canary` | Purr desktop app (portable build), plus the command-line tool | latest canary |
+| `scoop install purr-app-canary` | Purr desktop app (portable build), without the `purr` command | latest canary |
 
-The stable and canary packages both provide the `purr` command, so install one channel at a time.
+The stable and canary packages both provide the `purr` command, so install one channel at a time. The desktop app packages do not include the `purr` command: install `purr` or `purr-canary` for that.
 
 Windows x64 only. The builds bundle the CUDA runtime, so each download is about 500 MB. Canaries move
 forward with `scoop update`.
