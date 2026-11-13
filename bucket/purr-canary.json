@@ -1,14 +1,14 @@
 {
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
-    "version": "0.1.0-canary.336",
+    "version": "0.1.0-canary.338",
     "description": "Transcribe audio files and URLs with Whisper (command-line tool, canary build)",
     "homepage": "https://github.com/gaetschwartz/purr",
     "license": "MIT",
     "notes": "The Windows build bundles the CUDA runtime, so the download is about 500 MB. It uses an NVIDIA GPU when present, then Vulkan, then the CPU.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/gaetschwartz/purr/releases/download/canary-0.1.0-canary.336/purr-cli-windows-x64-cuda-vulkan.zip",
-            "hash": "fe21ba7437b0f2dd189e60d35f019df43f67185ab961fe2c5e68e3429d8ac6ec"
+            "url": "https://github.com/gaetschwartz/purr/releases/download/canary-0.1.0-canary.338/purr-cli-windows-x64-cuda-vulkan.zip",
+            "hash": "dca1df17a537495eda62ec2b82067c203dcb60f564fd73ee6478af9a118cfd01"
         }
     },
     "bin": "purr.exe",
