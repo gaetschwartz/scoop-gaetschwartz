@@ -1,14 +1,14 @@
 {
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
-    "version": "0.1.0-canary.354",
+    "version": "0.1.0-canary.355",
     "description": "Transcribe audio files and URLs on this computer (command-line tool, canary build)",
     "homepage": "https://github.com/gaetschwartz/purr",
     "license": "MIT",
     "notes": "The Windows build bundles the CUDA runtime, so the download is about 500 MB. It uses an NVIDIA GPU when present, then Vulkan, then the CPU.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/gaetschwartz/purr/releases/download/canary-0.1.0-canary.354/purr-cli-windows-x64-cuda-vulkan.zip",
-            "hash": "b5352572a2a6d894ff701bc027846d2a17079efa66e097047e2c5ba9a32be8e7"
+            "url": "https://github.com/gaetschwartz/purr/releases/download/canary-0.1.0-canary.355/purr-cli-windows-x64-cuda-vulkan.zip",
+            "hash": "6cd9def0c6e9bfa9233a97372613b660971f979de705b19a014c4eb32aa86c55"
         }
     },
     "bin": "purr.exe",
