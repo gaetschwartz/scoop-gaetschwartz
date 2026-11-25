@@ -1,0 +1,43 @@
+{
+    "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+    "version": "0.1.0-canary.366",
+    "description": "Transcribe audio files and URLs on this computer (desktop app, canary build)",
+    "homepage": "https://github.com/gaetschwartz/purr",
+    "license": "MIT",
+    "notes": "This build adds the CUDA libraries, so the download is large, and it needs an NVIDIA driver to use them. It uses an NVIDIA GPU when present, then Vulkan, then the CPU.",
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://github.com/gaetschwartz/purr/releases/download/canary-0.1.0-canary.366/purr-desktop-windows-x64-cuda-vulkan-portable.zip",
+                "https://github.com/gaetschwartz/purr/releases/download/canary-0.1.0-canary.366/purr-runtime-cuda-windows-x64.zip"
+            ],
+            "hash": [
+                "30334bb32d0ee1f7de96d071ffcce1c46617c0ecef127d8640bff0db9a49f3e3",
+                "c39afacabde620942371b06a8b16af4fbf7cee1864fff92044b440ed61e9149e"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "purr-app.exe",
+            "Purr Canary"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/gaetschwartz/purr/releases",
+        "regex": "releases/tag/canary-(\\d+\\.\\d+\\.\\d+-canary\\.\\d+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": [
+                    "https://github.com/gaetschwartz/purr/releases/download/canary-$version/purr-desktop-windows-x64-cuda-vulkan-portable.zip",
+                    "https://github.com/gaetschwartz/purr/releases/download/canary-$version/purr-runtime-cuda-windows-x64.zip"
+                ]
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS.txt"
+        }
+    }
+}
